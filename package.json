@@ -1,0 +1,33 @@
+{
+  "name": "vaccine-hub",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "0.21.1",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.1",
+    "pnpm": "^5.18.6",
+    "twilio": "^3.58.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-dir public",
+    "start": "node -r esm ./src/index.js",
+    "start:prod": "node ./public/index.js"
+  },
+  "keywords": [
+    "vaccine"
+  ],
+  "author": "zhao",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
